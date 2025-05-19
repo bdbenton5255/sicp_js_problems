@@ -14,11 +14,11 @@ function newSquareRoot(num) {
     }
     
     function improve(guess) {
-        console.log(guess);
         return average(guess, num/guess);
     }
 
     function squareRootIter(guess) {
+        console.log(guess);
         if (goodEnough(guess, improve(guess))) {
             return Math.round(improve(guess) * 1000) / 1000;
         } else {
